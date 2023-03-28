@@ -1,3 +1,5 @@
+package task1MiniCompany;
+
 import task1MiniCompany.Director;
 import task1MiniCompany.Manager;
 import task1MiniCompany.Worker;

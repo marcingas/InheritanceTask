@@ -34,7 +34,7 @@ public class Manager extends Worker{
     }
     public String pushTheWorker(Worker worker){
         worker.doNormalJob();
-        return "job done, "+ worker + " is working! ";
+        return getClass().getSimpleName() +" "+ name +": job done, "+ worker + " is working! ";
 
     }
 
