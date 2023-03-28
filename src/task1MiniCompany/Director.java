@@ -22,6 +22,8 @@ public class Director extends Manager{
     }
     public String pushManager(Manager manager){
         manager.doManagersJob();
-        return "now I can rest, Manager "+ manager +  " is working";
+        return getClass().getSimpleName() + ": now I can rest, "+ manager +  " is working";
     }
+
+
 }
