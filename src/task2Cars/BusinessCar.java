@@ -10,7 +10,7 @@ public class BusinessCar extends MiddleVerCar {
     }
 
     public String autoparkModeOn() {
-        return "Your park assistant already parked your car in thin spot";
+        return "Auto Park assistance is On. \nYou have your car parked in thin spot already";
     }
 
     @Override
@@ -23,8 +23,9 @@ public class BusinessCar extends MiddleVerCar {
         return "\nBusiness version, has  middle equipment:" +
                 "\nDrivingWheel :" + hasDrivingWheel() +
                 "\n Glasses :" + hasGlasses() +
-                "\n FourWheels : " + hasFourWheels() + " \nPLUS: " +
+                "\n FourWheels : " + hasFourWheels() +
+                " \nPLUS: " +
                 "\nClimatronic:  " + hasClimatronic() +
-                "\npark Assistant: " + parkAssistant;
+                "\nPark Assistant: " + parkAssistant;
     }
 }

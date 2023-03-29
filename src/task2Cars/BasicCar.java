@@ -1,36 +1,37 @@
 package task2Cars;
 
 public class BasicCar {
-    private boolean DrivingWheel;
-    private boolean Glasses;
-    private boolean FourWheels;
+    private boolean drivingWheel;
+    private boolean glasses;
+    private boolean fourWheels;
 
-    public boolean hasDrivingWheel() {
-        return DrivingWheel;
-    }
-
-    public boolean hasGlasses() {
-        return Glasses;
+    protected boolean hasDrivingWheel() {
+        return drivingWheel;
     }
 
-    public boolean hasFourWheels() {
-        return FourWheels;
+    protected boolean hasGlasses() {
+        return glasses;
     }
-    public BasicCar(){}
-    public BasicCar(boolean drivingWheel, boolean glasses, boolean fourWheels) {
-        DrivingWheel = drivingWheel;
-        Glasses = glasses;
-        FourWheels = fourWheels;
+
+    protected boolean hasFourWheels() {
+        return fourWheels;
     }
-    public String driveCar(){
+
+    public BasicCar() {
+        drivingWheel = true;
+        glasses = true;
+        fourWheels = true;
+    }
+
+    public String driveCar() {
         return "Engine is on, I can ride my brand new : " + toString();
     }
 
     @Override
     public String toString() {
         return "\nBasicCar, has equipment:" +
-                "\n-DrivingWheel :" + DrivingWheel +
-                "\n-Glasses :" + Glasses +
-                "\n-FourWheels : " + FourWheels;
+                "\n-DrivingWheel :" + drivingWheel +
+                "\n-Glasses :" + glasses +
+                "\n-FourWheels : " + fourWheels;
     }
 }

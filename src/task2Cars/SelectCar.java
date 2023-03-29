@@ -2,7 +2,7 @@ package task2Cars;
 
 public class SelectCar {
     public static void main(String[] args) {
-    BasicCar car = new BasicCar(true,true,true);
+    BasicCar car = new BasicCar();
         System.out.println(car.driveCar());
 
         MiddleVerCar car2 = new MiddleVerCar();

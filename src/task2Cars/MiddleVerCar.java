@@ -1,15 +1,15 @@
 package task2Cars;
 
-public class MiddleVerCar extends BasicCar{
+public class MiddleVerCar extends BasicCar {
     private boolean climatronic;
 
 
-    public boolean hasClimatronic() {
+    protected boolean hasClimatronic() {
         return climatronic;
     }
 
     public MiddleVerCar() {
-        super(true,true,true);
+        super();
         this.climatronic = true;
 
     }
@@ -18,8 +18,9 @@ public class MiddleVerCar extends BasicCar{
     public String driveCar() {
         return super.driveCar();
     }
-    public String radioOn(){
-        return "radio is playing nice jazz music";
+
+    public String radioOn() {
+        return "Radio is on. Now is playing nice jazz music";
     }
 
     @Override
@@ -27,7 +28,8 @@ public class MiddleVerCar extends BasicCar{
         return "\nMiddleCar version, has  basic equipment:" +
                 "\n-DrivingWheel :" + hasDrivingWheel() +
                 "\n-Glasses :" + hasGlasses() +
-                "\n-FourWheels : " + hasFourWheels() + " \nPLUS: "+
+                "\n-FourWheels : " + hasFourWheels() +
+                " \nPLUS: " +
                 "\n-Climatronic:  " + climatronic;
     }
 }
