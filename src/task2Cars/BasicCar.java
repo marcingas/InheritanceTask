@@ -23,14 +23,14 @@ public class BasicCar {
         FourWheels = fourWheels;
     }
     public String driveCar(){
-        return "Engine is on, I can ride";
+        return "Engine is on, I can ride my brand new : " + toString();
     }
 
     @Override
     public String toString() {
-        return "\nYour BasicCar has:" +
-                "\nDrivingWheel :" + DrivingWheel +
-                "\n, Glasses :" + Glasses +
-                "\n, FourWheels : " + FourWheels;
+        return "\nBasicCar, has equipment:" +
+                "\n-DrivingWheel :" + DrivingWheel +
+                "\n-Glasses :" + Glasses +
+                "\n-FourWheels : " + FourWheels;
     }
 }

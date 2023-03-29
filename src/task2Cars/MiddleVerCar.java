@@ -4,6 +4,10 @@ public class MiddleVerCar extends BasicCar{
     private boolean climatronic;
 
 
+    public boolean hasClimatronic() {
+        return climatronic;
+    }
+
     public MiddleVerCar() {
         super(true,true,true);
         this.climatronic = true;
@@ -20,10 +24,10 @@ public class MiddleVerCar extends BasicCar{
 
     @Override
     public String toString() {
-        return "\nYour BasicCar has:" +
-                "\nDrivingWheel :" + hasDrivingWheel() +
-                "\n Glasses :" + hasGlasses() +
-                "\n FourWheels : " + hasFourWheels() +
-                "\nClimatronic:  " + climatronic;
+        return "\nMiddleCar version, has  basic equipment:" +
+                "\n-DrivingWheel :" + hasDrivingWheel() +
+                "\n-Glasses :" + hasGlasses() +
+                "\n-FourWheels : " + hasFourWheels() + " \nPLUS: "+
+                "\n-Climatronic:  " + climatronic;
     }
 }
