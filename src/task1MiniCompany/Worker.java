@@ -4,6 +4,14 @@ public class Worker {
     private String name;
     private String surname;
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
     public Worker(){
 
     }
@@ -14,7 +22,7 @@ public class Worker {
     }
 
     public void doNormalJob(){
-        System.out.println(getClass().getSimpleName()+ " " +this.name +": i'm doing slowly my normal job everyday, try to avoid my superior");
+        System.out.println("Worker " + getName() +": i'm doing slowly my normal job everyday, try to avoid my superior");
     }
 
     @Override
