@@ -10,7 +10,7 @@ public class BusinessCar extends MiddleVerCar {
     }
 
     public String autoparkModeOn() {
-        return "Auto Park assistance is On. \nYou have your car parked in thin spot already";
+        return "Auto Park assistant is On. \nYou have your car parked in narrow spot already";
     }
 
     @Override
