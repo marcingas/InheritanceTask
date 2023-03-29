@@ -22,7 +22,7 @@ public class Worker {
     }
 
     public void doNormalJob(){
-        System.out.println("Worker " + getName() +": i'm doing slowly my normal job everyday, try to avoid my superior");
+        System.out.println(getName() + " " + getSurname() + ": i'm doing slowly my normal job everyday, try to avoid my superior");
     }
 
     @Override

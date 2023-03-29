@@ -6,9 +6,9 @@ import java.util.List;
 public class Manager extends Worker{
 
 
-    ArrayList<Worker> mySubordinates = new ArrayList<>();
+    private List<Worker> mySubordinates = new ArrayList<>();
 
-    public Manager(String name, String surname, ArrayList<Worker> MySubordinates ) {
+    public Manager(String name, String surname, List<Worker> MySubordinates ) {
         super(name,surname);
         this.mySubordinates = MySubordinates;
     }
@@ -32,6 +32,14 @@ public class Manager extends Worker{
         worker.doNormalJob();
         return "Manager "+ getName() +": job done, "+ worker + " is working! ";
 
+    }
+    public String pushTheWorkers(List<Worker>workerList){
+        for(Worker worker : workerList){
+            System.out.println(worker.getSurname() + " go to work! Now!");
+            worker.doNormalJob();
+            System.out.println("Worker " + worker.getName() + " is working now");
+        }
+        return "Well done, I'm free! ";
     }
 
 
